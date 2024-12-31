@@ -1,5 +1,6 @@
 Option Strict On
 Option Explicit On
+
 Imports System.Runtime.CompilerServices
 
 Public Module BinarySearch
@@ -24,7 +25,7 @@ Public Module BinarySearch
     End Sub
 
     <Extension()>
-    Public Function LeftSearch(Of T As {IComparable(Of T)})(list As IList(Of T), target As T) As Integer
+    Public Function LowerEqualSearch(Of T As {IComparable(Of T)})(list As IList(Of T), target As T) As Integer
         Dim lf As Integer = -1
         Dim rt As Integer = list.Count
 
@@ -47,7 +48,7 @@ Public Module BinarySearch
     End Function
 
     <Extension()>
-    Public Function RightSearch(Of T As {IComparable(Of T)})(list As IList(Of T), target As T) As Integer
+    Public Function UpperEqualSearch(Of T As {IComparable(Of T)})(list As IList(Of T), target As T) As Integer
         Dim lf As Integer = -1
         Dim rt As Integer = list.Count
 
